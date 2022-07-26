@@ -1,0 +1,19 @@
+.container {
+    /* display: grid;
+    width: 600px;
+    margin: 50px auto;
+    grid-template-columns: 25px auto 50px;
+    grid-template-rows: 50px 75px;
+    grid-auto-flow: column; */
+    /* defaultnya rows,berbeda dengan flexbox yg defaultnya column */
+
+    display: grid;
+    margin: 50px auto;
+    width: 800px;
+    background-color: antiquewhite;
+    grid-template-columns: 25px 50px;
+    grid-template-rows: [satu] 50px [dua] 75px [tiga] 50px;
+    /* [nama] adalah line name berguna ketika kita melakukan setting grid line */
+    grid-auto-columns: 400px;
+    grid-auto-flow: column;
+}
